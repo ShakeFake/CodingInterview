@@ -10,6 +10,7 @@ func TestRevertList(t *testing.T) {
 		Input  []string
 		Output []string
 	}{
+		// 因为你要区分单词的反转，因此必须要有信号区分单词。
 		{[]string{"w", "o", "r", "l", "d", "", "h", "e", "l", "l", "o", "", "s", "a", "y"},
 			[]string{"s", "a", "y", "", "h", "e", "l", "l", "o", "", "w", "o", "r", "l", "d"}},
 	}
@@ -30,6 +31,7 @@ func RevertListWord(dates []string) []string {
 			start = k + 1
 		}
 	}
+	// 此处使用 slice切片 的属性，修改值会对原值造成影响。
 	RevertListString(revertResult[start:len(revertResult)])
 	return revertResult
 }
