@@ -1,0 +1,29 @@
+import (
+	"fmt"
+	"testing"
+)
+
+/*
+  问题：
+  例子:
+		输入:
+		输出:
+  方法：
+*/
+
+func TestMaxStockEarning(t *testing.T) {
+	maxStockEarnings := []struct {
+		INPUT  []int
+		OUTPUT int
+	}{
+		{INPUT: []int{6, 10, 14, 20, 5}, OUTPUT: 15},
+	}
+	for _, maxStockEarning := range maxStockEarnings {
+		result := MaxStockEarning(maxStockEarning.INPUT)
+		fmt.Println(result)
+	}
+}
+
+func MaxStockEarning(dates []int) int {
+
+}
