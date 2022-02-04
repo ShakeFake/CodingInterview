@@ -5,6 +5,14 @@ import (
 	"testing"
 )
 
+/*
+	问题：给定一句话，将这句话所有单词翻转。
+	例子：
+		输入：[]string{"w", "o", "r", "l", "d", "", "h", "e", "l", "l", "o", "", "s", "a", "y"}
+		输出：[]string{"s", "a", "y", "", "h", "e", "l", "l", "o", "", "w", "o", "r", "l", "d"}
+	方法：第一次翻转翻转全部，然后在将每个单词额外翻转即可。
+*/
+
 func TestRevertList(t *testing.T) {
 	testRevertDatas := []struct {
 		Input  []string

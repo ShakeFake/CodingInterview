@@ -7,11 +7,14 @@ import (
 )
 
 /*
-  giving a list unsorted Array，ant merge it if the time contain
-  example: INPUT:  meeting{{1, 2}, {2, 3}, {4, 5}}
-           OUTPUT: meeting{{1, 3}, {2, 3}}
-           INPUT:  meeting{{1, 5}, {2, 3}}
-           OUTPUT: meeting{{1, 5}}
+  问题：给定一个未排序，独立的会议列表，返回一个合并过的会议列表。
+  例子:    输入: meeting{{1, 2}, {2, 3}, {4, 5}}
+           输出: meeting{{1, 3}, {4, 5}}
+           输入: meeting{{1, 5}, {2, 3}}
+           输出: meeting{{1, 5}}
+  方法：使用一个数组，用来接收返回值。
+        将会议按照首部进行排序，然后比较尾部。
+        遍历会议列表，比较尾部大小即可。
 */
 func TestMergeMeeting(t *testing.T) {
 	type Data struct {

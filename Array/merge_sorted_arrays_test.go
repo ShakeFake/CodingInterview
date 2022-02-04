@@ -7,12 +7,13 @@ import (
 )
 
 /*
-	giving two sorted arrays, and merge it into one array and sorted
-	Input: {1, 2, 4, 6} {3, 4, 5, 7}
-	Output: {1, 2, 3, 4, 5, 6, 7}
-
-	Input: {1, 2, 3, 4} {2, 3, 4, 5}
- 	Output: {1, 2, 3, 4, 5}
+	问题：合并两个已经排过序的数组
+	例子：
+		输入: {1, 2, 4, 6} {3, 4, 5, 7}
+		输出: {1, 2, 3, 4, 5, 6, 7}
+		输入: {1, 2, 3, 4} {2, 3, 4, 5}
+		输出: {1, 2, 3, 4, 5}
+	方法：对两个数组进行遍历，依次拼接，最后将不足的数组拼接至结果后面。
 */
 
 func TestMergeSortedArrays(t *testing.T) {

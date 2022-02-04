@@ -5,6 +5,14 @@ import (
 	"testing"
 )
 
+/*
+	问题：给定一个字符串，翻转它。
+	例子：
+		输入：[]string{"a", "b", "c", "d"}
+		输出：[]string{"d", "c", "b", "a"}
+	方法：翻转数组即可
+*/
+
 func TestRevertListString(t *testing.T) {
 	testRevertDatas := []struct {
 		Input  []string
