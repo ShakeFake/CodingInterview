@@ -6,6 +6,13 @@ import (
 	"testing"
 )
 
+/*
+  问题：统计一句话当中，单词出现的个数。
+  例子:	输入: "i am a boy"
+		输出: map[string]int{"i": 1, "am": 1, "a": 1, "boy": 1}
+  方法：指定分隔符，分割统计即可。
+*/
+
 func TestWordCount(t *testing.T) {
 	testWordCounts := []struct {
 		Input  string

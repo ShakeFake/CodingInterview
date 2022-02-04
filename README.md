@@ -1,3 +1,3 @@
 # CodingInterview
-I want this project to store some handle method of coding interview problems
+使用这个项目存储一些简单的算法，试试手。
 

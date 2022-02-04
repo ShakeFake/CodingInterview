@@ -5,6 +5,16 @@ import (
 	"testing"
 )
 
+/*
+  问题：给定一个数组和一个值，判断数组当中是否存在两个数字相加等于该值的。
+  例子:    输入: []int{1, 2, 3, 4, 5}, Output: 8
+           输出: true
+           输入: []int{3, 5, 7, 11, 13}, Output: 16
+           输出: true
+  方法：使用桶的算法进行处理，遍历数组，查询每一个值对应是否存在
+		不存在则由该值减去遍历数字，存储到数组当中。
+*/
+
 func TestDoubleNumAdd(t *testing.T) {
 	testDoubleNumAddDates := []struct {
 		Input  []int
