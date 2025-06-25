@@ -1,4 +1,4 @@
-package hash
+package leetcode
 
 import (
 	"fmt"

@@ -5,7 +5,3 @@ type BinaryTree struct {
 	Node  int
 	Right *BinaryTree
 }
-
-func ()()  {
-	
-}

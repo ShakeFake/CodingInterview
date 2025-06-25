@@ -1,4 +1,4 @@
-package interview
+package leetcode
 
 import (
 	"fmt"

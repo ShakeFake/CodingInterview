@@ -1,4 +1,4 @@
-package greedyAlgorithms
+package leetcode
 
 import (
 	. "codingInterview/utils"
